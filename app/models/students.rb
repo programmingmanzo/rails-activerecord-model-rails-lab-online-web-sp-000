@@ -1,7 +1,7 @@
 class Students < ActiveRecord::Base 
   
-  def student
-    self.first_name_to_s + " " + self.last_name_to_s
+  def to_s
+    self.first_name + " " + self.last_name
   end
   
 end
